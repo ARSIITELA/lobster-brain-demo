@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#183c34">
+  <meta name="description" content="从手机发送一句指令，查看电脑上的任务执行进度与结果。">
+  <title>龙虾脑 · 电脑任务工作台</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16M8 15v-4m5 4V6m5 9v-7"/></symbol>
+    <symbol id="i-computer" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 21h8m-4-5v5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="4"/><path d="m10 8 6 4-6 4Z"/></symbol>
+    <symbol id="i-meeting" viewBox="0 0 24 24"><rect x="3" y="6" width="12" height="12" rx="3"/><path d="m15 10 6-3v10l-6-3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5M5.5 7a7.5 7.5 0 0 1 12-2L20 8M4 16l2.5 3a7.5 7.5 0 0 0 12-2"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 7 12 5a5 5 0 0 1 7 7l-2 2m-3 3-2 2a5 5 0 0 1-7-7l2-2m1 6 8-8"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.1"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 5h4m-3 13h2"/></symbol>
+    <symbol id="i-lobster" viewBox="0 0 40 40"><path d="M17 13c-1-5-6-6-7-10M23 13c1-5 6-6 7-10M15 20c-9 1-13-5-9-10l4 4 3-5c5 3 4 8 2 11Zm10 0c9 1 13-5 9-10l-4 4-3-5c-5 3-4 8-2 11Z"/><path d="M15 20v8c0 5 5 8 5 8s5-3 5-8v-8c0-4-10-4-10 0Zm0 5h10m-9 5h8M15 24l-6 3m6 2-5 4m15-9 6 3m-6 2 5 4"/></symbol>
+  </svg>
+
+  <section id="pair-screen" class="pair-screen" hidden>
+    <div class="pair-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="pair-art-icon"><svg><use href="#i-lobster"/></svg></div><span class="pair-art-label">龙虾脑 / LOBSTER BRAIN</span><h2>手机发出指令，<br>电脑开始行动。</h2><p>查看每一步的执行进度，<br>让操作有结果，也有回应。</p><div class="pair-art-bottom"><span class="dot"></span> PERSONAL COMPUTER ASSISTANT</div></div>
+    <div class="pair-content"><a class="brand pair-brand" href="/"><span class="brand-mark"><svg><use href="#i-lobster"/></svg></span><span>龙虾脑<small>电脑任务工作台</small></span></a><div class="pair-form-wrap"><span class="eyebrow">连接你的电脑</span><h1>先完成设备配对</h1><p id="pair-description">输入电脑启动终端里显示的配对码，即可从这台设备发送指令。</p><form id="pair-form"><label for="pair-code">设备配对码</label><input id="pair-code" name="code" autocomplete="one-time-code" placeholder="输入启动终端中的配对码" required maxlength="64"><p id="pair-error" class="form-error" role="alert"></p><button class="button primary pair-submit" type="submit"><span>连接电脑</span><svg class="icon"><use href="#i-arrow"/></svg></button></form><div class="pair-help"><svg class="icon"><use href="#i-phone"/></svg><p>手机和电脑需连接同一个 Wi-Fi。<br>请保持电脑上的龙虾脑服务运行。</p></div></div><span class="pair-footer">最小演示版本 · 数据保存在当前电脑</span></div>
+  </section>
+
+  <div id="app" class="app-shell" hidden>
+    <aside class="sidebar">
+      <a class="brand" href="/"><span class="brand-mark"><svg><use href="#i-lobster"/></svg></span><span>龙虾脑<small>电脑任务工作台</small></span></a>
+      <div class="workspace-tag"><span class="workspace-avatar">我</span><div>我的工作空间<small>个人设备 · Demo</small></div><span class="workspace-chevron">⌄</span></div>
+      <div class="nav-label">工作空间</div>
+      <nav aria-label="主要导航"><button class="nav-item active" data-view="workspace" aria-label="任务工作台"><svg class="icon"><use href="#i-grid"/></svg><span>任务工作台</span><span class="nav-active-count" id="active-count">0</span></button><button class="nav-item" data-view="analytics" aria-label="运营数据"><svg class="icon"><use href="#i-chart"/></svg><span>运营数据</span></button><button class="nav-item" data-view="device" aria-label="设备与连接"><svg class="icon"><use href="#i-computer"/></svg><span>设备与连接</span></button></nav>
+      <div class="sidebar-bottom"><div class="sidebar-note"><span class="note-orbit">↗</span><h3>从手机开始</h3><p>连接同一个 Wi-Fi，<br>随时查看电脑任务的进度。</p><button data-view="device">查看接入方式 <span>→</span></button></div><div class="sidebar-version"><span class="tiny-lobster">◌</span><span>龙虾脑 MVP</span><span class="version-dot"></span><span id="version-label">v0.1</span></div></div>
+    </aside>
+    <div class="shell-content">
+      <header class="topbar"><div class="breadcrumbs"><span>我的工作空间</span><span>/</span><strong id="current-view-label">任务工作台</strong></div><div class="topbar-right"><span class="local-label">在你的电脑上执行</span><button class="connection-pill" data-view="device" id="connection-pill"><span class="dot"></span><span>正在连接</span></button><span class="user-avatar" aria-label="个人工作空间">我</span></div></header>
+      <div id="connection-alert" class="connection-alert" role="status" hidden><svg class="icon"><use href="#i-info"/></svg><span>暂时无法连接电脑，正在重新连接。页面显示最后一次同步的状态。</span><button id="reconnect-button">重新连接</button></div>
+      <main>
+        <section id="workspace-view" class="view">
+          <div class="page-heading"><div><div class="eyebrow">你的电脑助手</div><h1>今天，想让电脑做什么？</h1><p>发送一句指令，在这里查看电脑的执行进度和结果。</p></div><div class="page-date" id="page-date"></div></div>
+          <div class="work-grid">
+            <div class="work-main">
+              <section class="composer-card" aria-labelledby="composer-title"><div class="card-topline"><h2 id="composer-title"><span class="spark">✳</span> 创建一个任务</h2><span class="subtle-tag">支持 2 类场景</span></div><form id="command-form"><label for="command" class="sr-only">你希望电脑完成什么任务</label><textarea id="command" placeholder="例如：搜索电影，或搜索个流浪地球" maxlength="300" rows="3" required></textarea><div class="composer-bottom"><span class="composer-hint"><svg class="icon"><use href="#i-computer"/></svg><span id="composer-device">任务将在你的电脑上执行</span></span><button type="submit" id="submit-command" class="button primary">发送指令 <svg class="icon"><use href="#i-arrow"/></svg></button></div><p id="command-error" class="form-error" role="alert"></p></form><div class="examples"><span>试试这些指令</span><button data-command="搜索电影"><svg class="icon"><use href="#i-play"/></svg>搜索电影</button><button data-command="搜索个流浪地球"><svg class="icon"><use href="#i-play"/></svg>搜索流浪地球</button><button data-command="加入腾讯会议，会议码1234"><svg class="icon"><use href="#i-meeting"/></svg>加入腾讯会议 1234</button><button data-command="创建一个腾讯会议"><svg class="icon"><use href="#i-meeting"/></svg>创建腾讯会议</button></div></section>
+              <section class="device-strip"><span class="device-icon"><svg class="icon"><use href="#i-computer"/></svg></span><div class="device-strip-label"><strong id="device-name">当前电脑</strong><span id="device-description">正在读取设备状态</span></div><span id="device-live" class="device-live"><span class="dot"></span>正在连接</span><button class="icon-button" data-view="device" aria-label="查看设备详情"><svg class="icon"><use href="#i-arrow"/></svg></button></section>
+              <section class="history-section" aria-labelledby="history-title"><div class="section-title"><div><h2 id="history-title">任务记录</h2><span id="task-total">共 0 个任务</span></div><button class="text-button" id="refresh-tasks"><svg class="icon"><use href="#i-refresh"/></svg>刷新</button></div><div class="task-filters" role="group" aria-label="按任务状态筛选"><button class="filter active" data-filter="all">全部任务 <span id="all-count">0</span></button><button class="filter" data-filter="active">进行中</button><button class="filter" data-filter="succeeded">已完成</button><button class="filter" data-filter="failed">需处理</button></div><div id="task-list" class="task-list" aria-live="polite"></div></section>
+            </div>
+            <aside class="task-detail" id="task-detail" aria-label="当前任务详情"></aside>
+          </div>
+          <footer class="workspace-footer"><span><span class="dot"></span>任务记录来自本机实际执行</span><span>龙虾脑 · MVP 演示版本</span></footer>
+        </section>
+
+        <section id="analytics-view" class="view" hidden><div class="page-heading"><div><div class="eyebrow">运营观察</div><h1>每一次指令，都有记录</h1><p>查看当前电脑的实际任务数据，定位失败环节。</p></div><span class="data-badge"><span class="dot"></span>本机累计数据</span></div><div id="metric-cards" class="metric-cards"></div><div class="analytics-grid"><section class="panel trend-panel"><div class="section-title"><div><h2>最近任务趋势</h2><span>按任务创建日期统计</span></div><div class="legend"><span><i></i>提交任务</span><span><i></i>成功任务</span></div></div><div id="trend-chart" class="trend-chart"></div></section><section class="panel"><div class="section-title"><div><h2>场景完成情况</h2><span>按指令类型统计</span></div></div><div id="intent-stats"></div></section></div><div class="analytics-grid"><section class="panel"><div class="section-title"><div><h2>异常原因记录</h2><span>包含失败、待操作及取消任务的异常记录</span></div></div><div id="failure-stats"></div></section><section class="panel"><div class="section-title"><div><h2>指标口径</h2><span>让结果能够准确解释</span></div></div><dl class="metric-definitions"><div><dt>成功率</dt><dd>成功任务 ÷（成功任务 + 失败任务 + 已取消任务）；待操作任务不计入。</dd></div><div><dt>平均执行时间</dt><dd>从开始执行到结束，统计有开始和结束记录的成功、失败及已取消任务。</dd></div><div><dt>待用户操作</dt><dd>需要登录、填写信息或确认的任务，尚未计为成功。</dd></div><div><dt>数据范围</dt><dd>当前电脑的本地任务记录，未连接跨设备或线上统计。</dd></div></dl></section></div></section>
+
+        <section id="device-view" class="view" hidden><div class="page-heading"><div><div class="eyebrow">设备与连接</div><h1>让手机连接这台电脑</h1><p>连接后，手机和电脑可以查看同一份任务记录。</p></div></div><div class="device-page-grid"><section class="panel device-profile"><div class="computer-illustration"><svg><use href="#i-computer"/></svg><span class="illustration-dot"></span></div><h2 id="profile-device-name">当前电脑</h2><p id="profile-device-platform">正在读取设备信息</p><div id="profile-device-status" class="profile-status"></div><div class="profile-note">保持电脑开机，并让龙虾脑服务持续运行。电脑休眠或服务停止后，手机无法继续发送任务。</div></section><section class="panel connection-guide"><div class="section-title"><div><h2>手机接入步骤</h2><span>当前演示通过局域网连接</span></div></div><ol class="setup-steps"><li><span>1</span><div><h3>连接同一个 Wi-Fi</h3><p>将手机与这台电脑连接到同一个局域网。</p></div></li><li><span>2</span><div><h3>在手机浏览器打开地址</h3><p>选择下面的局域网地址。localhost 地址仅限当前电脑访问。</p><div id="connection-urls" class="connection-urls"></div></div></li><li><span>3</span><div><h3>输入电脑显示的配对码</h3><p>配对码位于启动终端中。完成配对后，即可发送指令。</p></div></li></ol></section><section class="panel capabilities-panel"><div class="section-title"><div><h2>当前能力与使用边界</h2><span>任务结果会说明实际完成到哪一步</span></div></div><div class="capability-cards"><article><svg class="icon"><use href="#i-play"/></svg><h3>在 B 站搜索电影</h3><p>输入“搜索电影”会搜索热门电影，也可以输入具体片名。电脑打开 B 站搜索结果，手机显示关键词和结果截图；本版不自动播放视频。验证码或网络限制会单独提示。</p></article><article><svg class="icon"><use href="#i-meeting"/></svg><h3>使用腾讯会议</h3><p>电脑完成安装、登录和授权后，可以自动创建会议并返回会议号。音视频状态需要在电脑上检查。有效会议号的加入仍需手动确认；会议码 1234 用于展示输入异常。</p></article><article><svg class="icon"><use href="#i-info"/></svg><h3>需要人工操作时</h3><p>登录、验证码或系统授权可能需要你在电脑上处理。没有收到完成证据的任务会保持待处理或失败状态。</p></article></div><div id="capability-runtime" class="runtime-notes"></div></section></div></section>
+      </main>
+    </div>
+  </div>
+  <div id="loading-screen" class="loading-screen"><span class="brand-mark"><svg><use href="#i-lobster"/></svg></span><p>正在连接龙虾脑服务…</p></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

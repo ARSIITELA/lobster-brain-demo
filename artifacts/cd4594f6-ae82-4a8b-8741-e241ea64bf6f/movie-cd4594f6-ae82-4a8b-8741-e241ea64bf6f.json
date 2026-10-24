@@ -1,0 +1,39 @@
+{
+  "taskId": "cd4594f6-ae82-4a8b-8741-e241ea64bf6f",
+  "query": "热门电影",
+  "url": "https://search.bilibili.com/all?keyword=%E7%83%AD%E9%97%A8%E7%94%B5%E5%BD%B1",
+  "state": "results",
+  "pageTitle": "热门电影-哔哩哔哩_bilibili",
+  "inputValue": "热门电影",
+  "httpStatus": 200,
+  "search": {
+    "query": "热门电影",
+    "resultCount": 22,
+    "empty": false,
+    "verified": true,
+    "verifiedAt": "2026-10-21T17:03:42.953Z",
+    "observedAt": "2026-10-21T17:03:42.953Z",
+    "items": [
+      {
+        "title": "韩国环境片《善良的妈妈》，看环境片，还得是韩国的！来呀官人影视解说影评全景电影",
+        "url": "https://www.bilibili.com/video/BV1nrYjedE7p/"
+      },
+      {
+        "title": "男生太色，一天看100部颜色电影！看到女老师都要崩溃，他决定戒色100天",
+        "url": "https://www.bilibili.com/video/BV17SHC65EUH/"
+      },
+      {
+        "title": "经典港片",
+        "url": "https://www.bilibili.com/video/BV1Rgpw6XEUG/"
+      },
+      {
+        "title": "女博士为了能顺利毕业，无奈只能牺牲自己屈从教授《热汤》",
+        "url": "https://www.bilibili.com/video/BV1gXk5BaE5C/"
+      },
+      {
+        "title": "劈叉，神剧！！号称尺度拉满的被禁韩影，骗了所有人 #姜艺媛 #韩国悬疑电影 #悬疑推理 #影视解说 #一口气看完系列 #高分冷门电影 #反转神片",
+        "url": "https://www.bilibili.com/video/BV1s8nc6PEqX/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-21",
+  "tool": "Tabbit",
+  "desktop": {
+    "width": 1440,
+    "scrollWidth": 1440
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 844,
+    "historyMaxHeight": 350,
+    "taskDetailVisibleAfterSubmit": true
+  },
+  "verified": [
+    "配对成功",
+    "1234 会议码失败提示",
+    "创建会议等待人工处理和安装链接",
+    "取消任务",
+    "重试后立即选择新任务",
+    "电影成功结果与截图实际加载",
+    "运营看板分母含取消",
+    "设备连接 URL",
+    "手机提交后自动显示详情"
+  ],
+  "fixes": [
+    "成功率和时长口径与后台一致",
+    "重试响应后立即渲染详情",
+    "手机任务记录限制为 350px 并独立滚动",
+    "手机提交成功后自动滚动到详情",
+    "会议能力边界提示",
+    "异常原因中文名称",
+    "中等宽度导航添加可访问名称",
+    "指令长度限制同步为 300"
+  ],
+  "screenshots": [
+    "desktop-analytics.png",
+    "desktop-invalid-code.png",
+    "mobile-auto-scroll.png",
+    "mobile-device.png",
+    "mobile-meeting-waiting.png",
+    "mobile-movie-result.png"
+  ]
+}

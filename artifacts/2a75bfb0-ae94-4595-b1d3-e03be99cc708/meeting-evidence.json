@@ -1,0 +1,10 @@
+{
+  "taskId": "2a75bfb0-ae94-4595-b1d3-e03be99cc708",
+  "observedAt": "2026-10-21T13:31:16.448Z",
+  "meetingCode": "428454318",
+  "inMeeting": true,
+  "microphoneMuted": null,
+  "cameraOff": null,
+  "client": "com.tencent.meeting",
+  "source": "accessibility-inmeeting-and-active-home-meeting"
+}

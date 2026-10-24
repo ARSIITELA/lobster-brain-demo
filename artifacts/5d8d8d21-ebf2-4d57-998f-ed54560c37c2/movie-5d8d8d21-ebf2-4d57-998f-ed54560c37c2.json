@@ -1,0 +1,39 @@
+{
+  "taskId": "5d8d8d21-ebf2-4d57-998f-ed54560c37c2",
+  "query": "猪猪侠",
+  "url": "https://search.bilibili.com/all?keyword=%E7%8C%AA%E7%8C%AA%E4%BE%A0",
+  "state": "results",
+  "pageTitle": "猪猪侠-哔哩哔哩_bilibili",
+  "inputValue": "猪猪侠",
+  "httpStatus": 200,
+  "search": {
+    "query": "猪猪侠",
+    "resultCount": 37,
+    "empty": false,
+    "verified": true,
+    "verifiedAt": "2026-10-21T17:08:59.414Z",
+    "observedAt": "2026-10-21T17:08:59.414Z",
+    "items": [
+      {
+        "title": "猪猪侠之光明守卫者",
+        "url": "https://www.bilibili.com/bangumi/play/ss46489"
+      },
+      {
+        "title": "1",
+        "url": "https://www.bilibili.com/bangumi/play/ep786021"
+      },
+      {
+        "title": "2",
+        "url": "https://www.bilibili.com/bangumi/play/ep786022"
+      },
+      {
+        "title": "52会员",
+        "url": "https://www.bilibili.com/bangumi/play/ep786072"
+      },
+      {
+        "title": "猪猪侠之竞球小英雄4",
+        "url": "https://www.bilibili.com/bangumi/play/ss46476"
+      }
+    ]
+  }
+}

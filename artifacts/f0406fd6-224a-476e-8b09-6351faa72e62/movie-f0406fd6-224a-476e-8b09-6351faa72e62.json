@@ -1,0 +1,39 @@
+{
+  "taskId": "f0406fd6-224a-476e-8b09-6351faa72e62",
+  "query": "流浪地球",
+  "url": "https://search.bilibili.com/all?keyword=%E6%B5%81%E6%B5%AA%E5%9C%B0%E7%90%83",
+  "state": "results",
+  "pageTitle": "流浪地球-哔哩哔哩_bilibili",
+  "inputValue": "流浪地球",
+  "httpStatus": 200,
+  "search": {
+    "query": "流浪地球",
+    "resultCount": 28,
+    "empty": false,
+    "verified": true,
+    "verifiedAt": "2026-10-21T17:11:37.592Z",
+    "observedAt": "2026-10-21T17:11:37.592Z",
+    "items": [
+      {
+        "title": "流浪地球2",
+        "url": "https://www.bilibili.com/bangumi/play/ep744327?theme=movie"
+      },
+      {
+        "title": "【流浪地球3｜新春祝福】小破球和家人们给大家拜年啦～",
+        "url": "https://www.bilibili.com/video/BV1XhZ5B6Es3/"
+      },
+      {
+        "title": "【流浪地球2：再次冒险 | 口碑特辑】感谢大家喜欢小破球的成长vlog！",
+        "url": "https://www.bilibili.com/video/BV1UitWeCESg/"
+      },
+      {
+        "title": "【流浪地球2 3D版 | 口碑特辑】座椅上的游乐场，我们一起来狂欢！",
+        "url": "https://www.bilibili.com/video/BV1xotneYEky/"
+      },
+      {
+        "title": "【流浪地球2：再次冒险 | “一场炸月亮的冒险”预告】月亮都没了，中秋节还放不放假？",
+        "url": "https://www.bilibili.com/video/BV1Cq41ebEJP/"
+      }
+    ]
+  }
+}

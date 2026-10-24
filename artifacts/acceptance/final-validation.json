@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-21T13:34:54.215Z",
+  "tests": {
+    "passed": 24,
+    "failed": 0
+  },
+  "unauthenticatedStateStatus": 401,
+  "pairedStateStatus": 200,
+  "lanHealthStatusFromSameComputer": 200,
+  "physicalPhoneTested": false,
+  "meetingCreateVerified": true,
+  "successfulTaskId": "2a75bfb0-ae94-4595-b1d3-e03be99cc708",
+  "totalTasks": 17
+}

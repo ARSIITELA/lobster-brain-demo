@@ -1,0 +1,15 @@
+{
+  "movieTitle": "You Can See Everything",
+  "source": "Rotten Tomatoes · In theaters · Most popular",
+  "sourceUrl": "https://www.rottentomatoes.com/browse/movies_in_theaters/sort:popular",
+  "url": "https://www.rottentomatoes.com/browse/movies_in_theaters/sort:popular",
+  "playback": {
+    "before": 0.151656,
+    "after": 1.371338,
+    "duration": 142.14200000000002,
+    "muted": true,
+    "readyState": 4,
+    "playerLabel": "Video Player - You Can See Everything: Trailer 1",
+    "verifiedAt": "2026-10-21T12:31:54.912Z"
+  }
+}

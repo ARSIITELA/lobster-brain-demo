@@ -1,0 +1,129 @@
+{
+  "recordedAt": "2026-10-21T12:32:31.220Z",
+  "viewport": {
+    "width": 430,
+    "height": 932
+  },
+  "physicalPhone": false,
+  "tasks": [
+    {
+      "id": "3da70644-42c8-4cf7-a483-b239332d5861",
+      "command": "搜索一部热门电影并播放相关视频",
+      "requestId": "33fbbdcb-c123-41c2-9aa7-7982a02b7b37",
+      "intent": "movie",
+      "status": "succeeded",
+      "mode": "real",
+      "createdAt": "2026-10-21T12:31:23.594Z",
+      "updatedAt": "2026-10-21T12:31:55.061Z",
+      "steps": [
+        {
+          "label": "理解你的指令",
+          "detail": "识别场景并检查所需信息。",
+          "status": "succeeded",
+          "time": "2026-10-21T12:31:23.609Z"
+        },
+        {
+          "label": "打开电影榜单",
+          "detail": "正在电脑浏览器读取 Rotten Tomatoes 的 Most popular 在映电影列表。",
+          "status": "succeeded",
+          "time": "2026-10-21T12:31:23.621Z"
+        },
+        {
+          "label": "找到电影并打开预告",
+          "detail": "已从实时热门列表选中《You Can See Everything》，正在点击网站提供的预告片入口。",
+          "status": "succeeded",
+          "time": "2026-10-21T12:31:45.522Z"
+        },
+        {
+          "label": "验证视频是否开始播放",
+          "detail": "正在检查播放器标题、媒体就绪状态和连续播放进度；网页打开不计为播放成功。",
+          "status": "succeeded",
+          "time": "2026-10-21T12:31:48.964Z"
+        }
+      ],
+      "startedAt": "2026-10-21T12:31:23.603Z",
+      "result": {
+        "title": "正在播放《You Can See Everything》预告片",
+        "summary": "电脑已播放《You Can See Everything》的预告片。已验证播放进度从 0.2 秒增长到 1.4 秒。播放器当前为静音，可在电脑上开启声音。",
+        "url": "https://www.rottentomatoes.com/browse/movies_in_theaters/sort:popular",
+        "screenshot": "/artifacts/3da70644-42c8-4cf7-a483-b239332d5861/movie-3da70644-42c8-4cf7-a483-b239332d5861.png",
+        "movieTitle": "You Can See Everything",
+        "source": "Rotten Tomatoes 实时 Most popular 在映电影列表",
+        "sourceUrl": "https://www.rottentomatoes.com/browse/movies_in_theaters/sort:popular",
+        "playback": {
+          "before": 0.151656,
+          "after": 1.371338,
+          "duration": 142.14200000000002,
+          "muted": true,
+          "readyState": 4,
+          "playerLabel": "Video Player - You Can See Everything: Trailer 1",
+          "verifiedAt": "2026-10-21T12:31:54.912Z"
+        }
+      },
+      "finishedAt": "2026-10-21T12:31:55.061Z"
+    },
+    {
+      "id": "c6bb9c59-8629-415c-9f74-93a2ecc5f538",
+      "command": "加入腾讯会议，会议码1234",
+      "requestId": "5d3c87e8-1d23-40dc-b086-06388fe59c24",
+      "intent": "meeting_join",
+      "status": "failed",
+      "mode": "real",
+      "createdAt": "2026-10-21T12:32:03.502Z",
+      "updatedAt": "2026-10-21T12:32:03.516Z",
+      "steps": [
+        {
+          "label": "理解你的指令",
+          "detail": "识别场景并检查所需信息。",
+          "status": "failed",
+          "time": "2026-10-21T12:32:03.509Z"
+        }
+      ],
+      "startedAt": "2026-10-21T12:32:03.506Z",
+      "meetingCode": "1234",
+      "error": {
+        "code": "INVALID_MEETING_CODE",
+        "message": "会议码 1234 不完整。腾讯会议普通会议号为 9 位，个人会议号为 10 位。",
+        "recovery": "请补充 9 位或 10 位会议号后重新提交。"
+      },
+      "finishedAt": "2026-10-21T12:32:03.516Z"
+    },
+    {
+      "id": "eb729512-f39f-4a61-94aa-73984291dbb7",
+      "command": "创建一个腾讯会议",
+      "requestId": "cedac063-5a74-460e-89c1-a5aba51c0494",
+      "intent": "meeting_create",
+      "status": "waiting_user",
+      "mode": "real",
+      "createdAt": "2026-10-21T12:32:11.583Z",
+      "updatedAt": "2026-10-21T12:32:11.602Z",
+      "steps": [
+        {
+          "label": "理解你的指令",
+          "detail": "识别场景并检查所需信息。",
+          "status": "succeeded",
+          "time": "2026-10-21T12:32:11.592Z"
+        },
+        {
+          "label": "检查腾讯会议客户端",
+          "detail": "检查当前电脑是否安装了腾讯会议。",
+          "status": "waiting_user",
+          "time": "2026-10-21T12:32:11.595Z"
+        }
+      ],
+      "startedAt": "2026-10-21T12:32:11.589Z",
+      "result": {
+        "title": "需要安装腾讯会议",
+        "summary": "当前电脑未检测到腾讯会议客户端。安装并登录后可以重试；当前版本仍需要在电脑上完成创建或加入会议的操作。",
+        "url": "https://meeting.tencent.com/download/"
+      },
+      "error": {
+        "code": "MEETING_APP_MISSING",
+        "message": "电脑上没有检测到腾讯会议客户端。",
+        "recovery": "在电脑上安装并登录腾讯会议，然后点击重试。如果安装在其他位置，请设置 TENCENT_MEETING_APP。"
+      },
+      "finishedAt": "2026-10-21T12:32:11.602Z"
+    }
+  ],
+  "errors": []
+}

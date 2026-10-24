@@ -1,0 +1,53 @@
+{
+  "id": "2a75bfb0-ae94-4595-b1d3-e03be99cc708",
+  "command": "创建一个腾讯会议",
+  "requestId": "7da0647a-8e0e-4035-8aff-d1dda586acf5",
+  "intent": "meeting_create",
+  "status": "succeeded",
+  "mode": "real",
+  "createdAt": "2026-10-21T13:31:09.460Z",
+  "updatedAt": "2026-10-21T13:31:16.448Z",
+  "steps": [
+    {
+      "label": "理解你的指令",
+      "detail": "识别场景并检查所需信息。",
+      "status": "succeeded",
+      "time": "2026-10-21T13:31:09.479Z"
+    },
+    {
+      "label": "检查腾讯会议客户端",
+      "detail": "检查应用安装、登录及电脑操作权限。",
+      "status": "succeeded",
+      "time": "2026-10-21T13:31:09.487Z"
+    },
+    {
+      "label": "在电脑上创建会议",
+      "detail": "在已登录的腾讯会议中点击快速会议。",
+      "status": "succeeded",
+      "time": "2026-10-21T13:31:10.612Z"
+    },
+    {
+      "label": "读取会议结果",
+      "detail": "核对会中界面，并等待客户端显示当前会议号。",
+      "status": "succeeded",
+      "time": "2026-10-21T13:31:14.636Z"
+    }
+  ],
+  "startedAt": "2026-10-21T13:31:09.469Z",
+  "result": {
+    "title": "腾讯会议已创建",
+    "summary": "这台电脑已进入会议，已读取会议号。麦克风状态未能确认，请在电脑上检查。摄像头状态未能确认，请在电脑上检查。会议会保持打开。",
+    "meetingCode": "428454318",
+    "evidence": {
+      "taskId": "2a75bfb0-ae94-4595-b1d3-e03be99cc708",
+      "observedAt": "2026-10-21T13:31:16.448Z",
+      "meetingCode": "428454318",
+      "inMeeting": true,
+      "microphoneMuted": null,
+      "cameraOff": null,
+      "client": "com.tencent.meeting",
+      "source": "accessibility-inmeeting-and-active-home-meeting"
+    }
+  },
+  "finishedAt": "2026-10-21T13:31:16.448Z"
+}

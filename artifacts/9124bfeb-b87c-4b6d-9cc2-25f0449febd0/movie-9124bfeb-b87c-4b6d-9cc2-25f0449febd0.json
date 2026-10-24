@@ -1,0 +1,39 @@
+{
+  "taskId": "9124bfeb-b87c-4b6d-9cc2-25f0449febd0",
+  "query": "流浪地球我看看",
+  "url": "https://search.bilibili.com/all?keyword=%E6%B5%81%E6%B5%AA%E5%9C%B0%E7%90%83%E6%88%91%E7%9C%8B%E7%9C%8B",
+  "state": "results",
+  "pageTitle": "流浪地球我看看-哔哩哔哩_bilibili",
+  "inputValue": "流浪地球我看看",
+  "httpStatus": 200,
+  "search": {
+    "query": "流浪地球我看看",
+    "resultCount": 26,
+    "empty": false,
+    "verified": true,
+    "verifiedAt": "2026-10-21T17:07:53.145Z",
+    "observedAt": "2026-10-21T17:07:53.145Z",
+    "items": [
+      {
+        "title": "流浪地球2",
+        "url": "https://www.bilibili.com/bangumi/play/ep744327?theme=movie"
+      },
+      {
+        "title": "120秒带你看完《流浪地球：飞跃2020特别版》",
+        "url": "https://www.bilibili.com/video/BV1M6pc65ESS/"
+      },
+      {
+        "title": "《流..2》reaction",
+        "url": "https://www.bilibili.com/video/BV1LHJy6vEzs/"
+      },
+      {
+        "title": "《流浪地球》里的抖音海藻舞终于找到",
+        "url": "https://www.bilibili.com/video/BV1eb41127g5/"
+      },
+      {
+        "title": "弹幕[雪糕cheese/录播]2026-10-13|【糕门放映室】一起看流浪地球",
+        "url": "https://www.bilibili.com/video/BV13bWA6WE61/"
+      }
+    ]
+  }
+}

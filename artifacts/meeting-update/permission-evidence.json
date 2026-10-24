@@ -1,0 +1,130 @@
+{
+  "recordedAt": "2026-10-21T13:03:15.651Z",
+  "physicalPhone": false,
+  "viewport": {
+    "width": 430,
+    "height": 932
+  },
+  "task": {
+    "id": "fa2d955c-2131-4910-b027-f11e4ba0b601",
+    "command": "创建一个腾讯会议",
+    "requestId": "76f8d64a-0c0d-4725-906b-7d9d6f9db4b2",
+    "intent": "meeting_create",
+    "status": "waiting_user",
+    "mode": "real",
+    "createdAt": "2026-10-21T13:02:56.414Z",
+    "updatedAt": "2026-10-21T13:02:58.357Z",
+    "steps": [
+      {
+        "label": "理解你的指令",
+        "detail": "识别场景并检查所需信息。",
+        "status": "succeeded",
+        "time": "2026-10-21T13:02:56.434Z"
+      },
+      {
+        "label": "检查腾讯会议客户端",
+        "detail": "检查应用安装、登录及电脑操作权限。",
+        "status": "waiting_user",
+        "time": "2026-10-21T13:02:56.443Z"
+      }
+    ],
+    "startedAt": "2026-10-21T13:02:56.421Z",
+    "error": {
+      "code": "ACCESSIBILITY_REQUIRED",
+      "message": "会议执行器缺少辅助功能权限。",
+      "recovery": "在系统设置 → 隐私与安全性中，允许会议执行器或启动 Demo 的终端使用对应权限，再重试。执行器不会自行更改系统权限。"
+    },
+    "finishedAt": "2026-10-21T13:02:58.357Z"
+  },
+  "metrics": {
+    "total": 12,
+    "succeeded": 2,
+    "failed": 5,
+    "waiting": 4,
+    "cancelled": 1,
+    "successRate": 25,
+    "successDenominator": 8,
+    "completionRate": 17,
+    "avgDurationMs": 22161,
+    "p95DurationMs": 97783,
+    "byIntent": [
+      {
+        "intent": "movie",
+        "label": "电影与视频",
+        "total": 2,
+        "succeeded": 2
+      },
+      {
+        "intent": "meeting_join",
+        "label": "加入会议",
+        "total": 5,
+        "succeeded": 0
+      },
+      {
+        "intent": "meeting_create",
+        "label": "创建会议",
+        "total": 5,
+        "succeeded": 0
+      },
+      {
+        "intent": "unknown",
+        "label": "未支持的任务",
+        "total": 0,
+        "succeeded": 0
+      }
+    ],
+    "failureReasons": [
+      {
+        "code": "INVALID_MEETING_CODE",
+        "count": 5
+      },
+      {
+        "code": "MEETING_APP_MISSING",
+        "count": 4
+      },
+      {
+        "code": "ACCESSIBILITY_REQUIRED",
+        "count": 1
+      }
+    ],
+    "recentDays": [
+      {
+        "date": "2026-10-15",
+        "total": 0,
+        "succeeded": 0
+      },
+      {
+        "date": "2026-10-16",
+        "total": 0,
+        "succeeded": 0
+      },
+      {
+        "date": "2026-10-17",
+        "total": 0,
+        "succeeded": 0
+      },
+      {
+        "date": "2026-10-18",
+        "total": 0,
+        "succeeded": 0
+      },
+      {
+        "date": "2026-10-19",
+        "total": 0,
+        "succeeded": 0
+      },
+      {
+        "date": "2026-10-20",
+        "total": 0,
+        "succeeded": 0
+      },
+      {
+        "date": "2026-10-21",
+        "total": 12,
+        "succeeded": 2
+      }
+    ]
+  },
+  "overflow": false,
+  "errors": []
+}
